@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>SK Tuk Rides | #1 Self-Drive Tuk Tuk Rental Sri Lanka</title>
+    <meta name="title" content="SK Tuk Rides | #1 Self-Drive Tuk Tuk Rental Sri Lanka">
+    <meta name="description" content="Explore Sri Lanka with freedom. Premium self-drive Tuk Tuk rentals in Negombo, Colombo, and Sigiriya. Official AAC licensing, driving lessons, and 24/7 support.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2830/2830238.png">
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/2830/2830238.png">
+
+    <meta name="keywords" content="tuk tuk rental sri lanka, self drive tuk tuk, rent a tuk tuk negombo, tuk tuk hire colombo, sk tuk rides, sri lanka adventure, AAC license sri lanka">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sktukrides.com/">
+    <meta property="og:title" content="SK Tuk Rides | Self-Drive Tuk Tuk Rental Sri Lanka">
+    <meta property="og:description" content="Experience the ultimate freedom. We provide the vehicle, the training, and the license. You provide the sense of adventure.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1552423814-258e923b729a?q=80&w=1200&auto=format&fit=crop">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.sktukrides.com/">
+    <meta property="twitter:title" content="SK Tuk Rides | Self-Drive Tuk Tuk Rental Sri Lanka">
+    <meta property="twitter:description" content="Experience the ultimate freedom. We provide the vehicle, the training, and the license. You provide the sense of adventure.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1552423814-258e923b729a?q=80&w=1200&auto=format&fit=crop">
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <!-- JSON-LD Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRental",
+      "name": "SK Tuk Rides",
+      "image": "https://i.postimg.cc/mZMhHd3M/a30abd70_396e_4935_a743_c10187d178b4.jpg",
+      "description": "Premium self-drive Tuk Tuk rentals in Sri Lanka. Experience the gold standard of independent travel with 24/7 mechanical support.",
+      "url": "https://www.sktukrides.com",
+      "telephone": "+94768292995",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "17/10 Dollar Rosa Road, Gramasanwardana Mawatha, Pallansena",
+        "addressLocality": "Kochchikade",
+        "addressRegion": "Western Province",
+        "postalCode": "11540",
+        "addressCountry": "LK"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 7.256,
+        "longitude": 79.859
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "20:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/ssktours08",
+        "https://wa.me/94768292995"
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary-green: #238b45;
+            --primary-yellow: #FFD700;
+            --dark-bg: #121212;
+            --text-main: #111827;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: var(--text-main);
+            overflow-x: hidden;
+            background-color: #f8f9fa;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            backdrop-filter: blur(15px);
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px 0;
+            transition: 0.3s;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .navbar-brand {
+            font-weight: 800;
+            letter-spacing: -1px;
+            color: var(--primary-green) !important;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1506461883276-594a12b11cf3?q=80&w=1920&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            min-height: 700px;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-align: left;
+        }
+
+        .hero-title {
+            font-size: clamp(3rem, 8vw, 5rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 25px;
+        }
+
+        /* Custom Buttons */
+        .btn-primary-custom {
+            background-color: var(--primary-green);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-weight: 700;
+            border-radius: 50px;
+            transition: 0.4s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-primary-custom:hover {
+            background-color: #1a6b35;
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(35, 139, 69, 0.3);
+            color: white;
+        }
+
+        /* Feature Cards */
+        .feature-card {
+            border: none;
+            padding: 40px;
+            border-radius: 30px;
+            background: #fff;
+            transition: 0.4s;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+            height: 100%;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+        }
+
+        .icon-box {
+            width: 70px;
+            height: 70px;
+            background: rgba(35, 139, 69, 0.1);
+            color: var(--primary-green);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            font-size: 2rem;
+            margin-bottom: 25px;
+        }
+
+        /* Fleet Section */
+        .fleet-card {
+            border: none;
+            border-radius: 25px;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+        }
+
+        .fleet-img {
+            height: 280px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .price-tag {
+            background: var(--primary-yellow);
+            padding: 5px 15px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: black;
+        }
+
+        /* Trust Badges */
+        .trust-badge {
+            background: white;
+            padding: 15px 25px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-bg);
+            color: rgba(255,255,255,0.7);
+            padding: 80px 0 30px;
+            border-radius: 50px 50px 0 0;
+        }
+
+        footer h4 {
+            color: white;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 20px;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--primary-yellow);
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fs-2" href="#">SK TUK<span class="text-dark">RIDES</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link px-3 fw-medium" href="#features">Why Us</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 fw-medium" href="#fleet">Our Fleet</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 fw-medium" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 fw-medium" href="#blog">Journal</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 fw-medium" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="https://booking.sktukrides.com" class="btn btn-primary-custom rounded-pill px-4 fw-bold">ENQUIRE NOW!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-lg-10">
+                    <span class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill fw-bold">SRI LANKA'S #1 SELF-DRIVE RENTAL</span>
+                    <h1 class="hero-title">Drive Your Own <br>TukTuk in <span class="text-warning">Paradise.</span></h1>
+                    <p class="lead fs-4 mb-5 opacity-75">Experience the ultimate freedom. Starting from just **$11 per Day!** We provide the vehicle, the training, and the license. You provide the adventure.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="https://booking.sktukrides.com" class="btn btn-primary-custom btn-lg">Book Your Adventure</a>
+                        <a href="#fleet" class="btn btn-outline-light btn-lg rounded-pill px-4">Explore Fleet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Stats Section -->
+    <section class="py-4 bg-white border-bottom">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-auto">
+                    <div class="trust-badge">
+                        <i class="bi bi-google text-danger"></i>
+                        <span><strong>4.9/5</strong> (68 Reviews)</span>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="trust-badge">
+                        <i class="bi bi-star-fill text-success"></i>
+                        <span><strong>5.0</strong> on TripAdvisor</span>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="trust-badge">
+                        <i class="bi bi-facebook text-primary"></i>
+                        <span><strong>5.0</strong> (34 Reviews)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 my-5" id="features">
+        <div class="container py-5">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4 text-primary">More Than Just <br>a Rental Service.</h2>
+                </div>
+                <div class="col-lg-6">
+                    <p class="text-muted fs-5">We equip you with the skills, the paperwork, and the support to travel with confidence. It’s more than a rental; it’s peace of mind.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card text-center">
+                        <div class="icon-box mx-auto"><i class="bi bi-shield-lock"></i></div>
+                        <h4>Fully Insured</h4>
+                        <p class="text-muted">Comprehensive rental insurance included. Drive with total peace of mind across the entire island from Jaffna to Matara.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card text-center">
+                        <div class="icon-box mx-auto"><i class="bi bi-tools"></i></div>
+                        <h4>24/7 Roadside Support</h4>
+                        <p class="text-muted">Mechanical issue? We have a network of trusted mechanics in every major town. Direct billing—no out-of-pocket costs for you.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card text-center">
+                        <div class="icon-box mx-auto"><i class="bi bi-person-badge"></i></div>
+                        <h4>Official AAC License</h4>
+                        <p class="text-muted">We handle the official Automobile Association of Ceylon (AAC) permit for you. Legal and ready when you arrive.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section class="bg-light py-5" id="fleet">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Choose Your Ride</h2>
+                <p class="text-muted">Meticulously maintained vehicles for your safety and comfort.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Vehicle 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="fleet-card h-100">
+                        <img src="https://images.unsplash.com/photo-1610413331454-e0e6430e377e?q=80&w=800&auto=format&fit=crop" alt="Classic Bajaj Tuk Tuk" class="fleet-img">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="fw-bold mb-0">The Explorer</h4>
+                                <span class="price-tag">$16/day</span>
+                            </div>
+                            <p class="text-muted">The authentic Sri Lankan experience. Manual gears, iconic design, and 3 Pax capacity.</p>
+                            <ul class="list-unstyled mb-4 mt-auto">
+                                <li><i class="bi bi-check2-circle text-success me-2"></i> Fuel Efficient 4-Stroke</li>
+                                <li><i class="bi bi-check2-circle text-success me-2"></i> Phone Holder & Charger</li>
+                                <li><i class="bi bi-check2-circle text-success me-2"></i> Waterproof Curtains</li>
+                            </ul>
+                            <a href="https://booking.sktukrides.com" class="btn btn-dark w-100 py-3 rounded-pill fw-bold">BOOK NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Vehicle 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="fleet-card h-100 border border-success">
+                        <img src="https://images.unsplash.com/photo-1552423814-258e923b729a?q=80&w=800&auto=format&fit=crop" alt="Premium Tuk Tuk" class="fleet-img">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="fw-bold mb-0">The Pro</h4>
+                                <span class="price-tag">$18/day</span>
+                            </div>
+                            <p class="text-muted">Enhanced suspension and high-quality speakers. Designed for long-distance comfort.</p>
+                            <ul class="list-unstyled mb-4 mt-auto">
+                                <li><i class="bi bi-star-fill text-warning me-2"></i> Bluetooth Sound System</li>
+                                <li><i class="bi bi-check2-circle text-success me-2"></i> Extra Storage Rack</li>
+                                <li><i class="bi bi-check2-circle text-success me-2"></i> Enhanced Lighting</li>
+                            </ul>
+                            <a href="https://booking.sktukrides.com" class="btn btn-success w-100 py-3 rounded-pill fw-bold">MOST POPULAR</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Vehicle 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="fleet-card h-100">
+                        <img src="https://images.unsplash.com/photo-1625244199920-c75c04b77d6f?q=80&w=800&auto=format&fit=crop" alt="Adventure Ready Tuk Tuk" class="fleet-img">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="fw-bold mb-0">Bikes / Scooters</h4>
+                                <span class="price-tag">$12/day</span>
+                            </div>
+                            <p class="text-muted">Navigate the island with agility. Lean into every coastal curve with total two-wheeled freedom.</p>
+                            <ul class="list-unstyled mb-4 mt-auto">
+                                <li><i class="bi bi-check2-circle text-success me-2"></i> Modern 125cc+ Engines</li>
+                                <li><i class="bi bi-check2-circle text-success me-2"></i> Helmet & Insurance Incl.</li>
+                                <li><i class="bi bi-check2-circle text-success me-2"></i> Master hidden trails</li>
+                            </ul>
+                            <a href="https://booking.sktukrides.com" class="btn btn-dark w-100 py-3 rounded-pill fw-bold">BOOK NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lessons & Licensing Section -->
+    <section class="py-5 bg-white" id="services">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Master the Three-Wheeler</h2>
+                <p class="text-muted fs-5">We won't let you leave until you feel 100% confident.</p>
+            </div>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="p-4 bg-light rounded-4">
+                        <h3 class="fw-bold mb-4"><i class="bi bi-mortarboard text-primary me-2"></i> The Driving Lesson</h3>
+                        <p class="leading-relaxed">Driving a TukTuk requires a specific technique for handlebar gear shifting. Every rental includes a **1 to 2-hour comprehensive lesson** with our qualified instructors in a quiet area.</p>
+                        <ul class="list-unstyled mt-3">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Handlebar gear shift mastery</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Foot-brake & clutch coordination</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Defensive driving for local roads</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="p-4 bg-light rounded-4">
+                        <h3 class="fw-bold mb-4"><i class="bi bi-card-text text-primary me-2"></i> Sri Lankan Driving Permit</h3>
+                        <p class="leading-relaxed">Your IDP is not sufficient alone. You legally require an AAC recognition permit. **We handle this for you.** Simply email your documents, and it's ready at pickup.</p>
+                        <div class="alert bg-white border mt-3 mb-0">
+                            <span class="fw-bold text-dark">Permit Cost: $42 USD</span>
+                            <span class="text-muted ms-2">(Official AAC fee)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog / Guide Section -->
+    <section class="py-5 bg-light" id="blog">
+        <div class="container py-5">
+            <div class="d-flex justify-content-between align-items-end mb-5">
+                <div>
+                    <h2 class="display-5 fw-bold">Travel Journal</h2>
+                    <p class="text-muted mb-0">Tips, routes, and stories from the road.</p>
+                </div>
+                <a href="https://booking.sktukrides.com/#/blog" class="btn btn-outline-dark rounded-pill px-4 d-none d-md-block">View All Journal Entries</a>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                        <img src="https://i.postimg.cc/pLVTXwp0/Sigiriya-Rock-Sri-Lanka.jpg" class="card-img-top" alt="Sigiriya Guide">
+                        <div class="card-body p-4">
+                            <span class="badge bg-success-subtle text-success mb-2">Travel Guide</span>
+                            <h5 class="fw-bold">Sigiriya: The Lion Rock Guide</h5>
+                            <p class="text-muted small">Everything you need to know before climbing the 8th wonder of the world. Best times and tips.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                        <img src="https://i.postimg.cc/c4fp5hB7/Pidurangala-Rock-Group-Shot-700x461.jpg" class="card-img-top" alt="Cost of Travel">
+                        <div class="card-body p-4">
+                            <span class="badge bg-primary-subtle text-primary mb-2">Travel Tips</span>
+                            <h5 class="fw-bold">Cost of Travel: 2025 Budget Guide</h5>
+                            <p class="text-muted small">From fuel prices to local rice and curry costs, we break down your daily spend.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                        <img src="https://i.postimg.cc/fRjMXB0t/surf-camping-arugam-bay-2.jpg" class="card-img-top" alt="Surfing Guide">
+                        <div class="card-body p-4">
+                            <span class="badge bg-info-subtle text-info mb-2">Lifestyle</span>
+                            <h5 class="fw-bold">🌊 Surf, Chill, Repeat: Arugam Bay</h5>
+                            <p class="text-muted small">Park your Tuk Tuk and hit the waves. The ultimate guide to Sri Lanka's surf capital.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <h3 class="text-white fw-bold mb-4">SK TUK<span class="text-warning">RIDES</span></h3>
+                    <p class="mb-4">Premium transport solutions for the modern traveler. Experience Sri Lanka with freedom, comfort, and safety.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/ssktours08" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://wa.me/94768292995" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#features" class="text-decoration-none text-secondary">Why Us</a></li>
+                        <li class="mb-2"><a href="#fleet" class="text-decoration-none text-secondary">Fleet</a></li>
+                        <li class="mb-2"><a href="#services" class="text-decoration-none text-secondary">Lessons</a></li>
+                        <li class="mb-2"><a href="#blog" class="text-decoration-none text-secondary">Journal</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Contact Us</h4>
+                    <p class="mb-2"><i class="bi bi-geo-alt me-2 text-warning"></i> 17/10 Dollar Rosa Road, Gramasanwardana Mawatha, Pallansena, Kochchikade</p>
+                    <p class="mb-2"><i class="bi bi-envelope me-2 text-warning"></i> sktukrides@gmail.com</p>
+                    <p class="mb-1"><i class="bi bi-phone me-2 text-warning"></i> +94 77 947 7196</p>
+                    <p class="mb-1"><i class="bi bi-phone me-2 text-warning"></i> +94 77 904 4169</p>
+                    <p class="mb-1"><i class="bi bi-whatsapp me-2 text-warning"></i> +94 76 829 2995</p>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Trust & Safety</h4>
+                    <p class="small mb-3 text-gray-400">We follow strict maintenance and hygiene checks to keep your travel safe.</p>
+                    <div class="d-flex align-items-center gap-2 text-primary">
+                        <i class="bi bi-shield-check fs-4"></i>
+                        <span class="fw-bold">Officially Registered</span>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small mb-0">&copy; 2026 SK Tuk Rides. All rights reserved. Created with ❤️ in Sri Lanka.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small mb-0">Terms of Service | Privacy Policy</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
