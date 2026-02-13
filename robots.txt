@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://www.sktukrides.com/sitemap.xml
+Sitemap: https://promo.sktukrides.com/sitemap.xml
