@@ -38,19 +38,19 @@ cities.forEach(city => {
     // Replace Title
     content = content.replace(
         /<title>.*<\/title>/,
-        `<title>Rent a Tuk Tuk in ${city.name} | Self-Drive Rental Sri Lanka | SK Tuk Rides</title>`
+        `<title>Rent a Tuk Tuk in ${city.name} | Self-Drive Hire & Rental | SK Tuk Rides</title>`
     );
 
     // Replace Meta Title
     content = content.replace(
         /<meta name="title" content=".*">/,
-        `<meta name="title" content="Rent a Tuk Tuk in ${city.name} | Self-Drive Rental Sri Lanka">`
+        `<meta name="title" content="Rent a Tuk Tuk in ${city.name} | Self-Drive Hire & Rental | SK Tuk Rides">`
     );
 
     // Replace Meta Description
     content = content.replace(
         /<meta name="description" content=".*">/,
-        `<meta name="description" content="${city.desc} We provide full training, insurance, and driving permits. Book your 3-wheeler in ${city.name} today!">`
+        `<meta name="description" content="${city.desc} Affordable self-drive Tuk Tuk hire with full training, insurance, and driving permits.">`
     );
     
     // Replace "Locations" footer column to "Nearby Cities" (Avoid circular logic or massive footers)
