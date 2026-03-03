@@ -414,6 +414,38 @@
                 text-align: center;
             }
         }
+
+        /* Language Switcher Toggle */
+        .lang-switcher {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(0,0,0,0.07);
+            border-radius: 50px;
+            padding: 4px;
+            gap: 2px;
+        }
+        .lang-switcher a {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 5px 13px;
+            border-radius: 50px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: #555;
+            transition: all 0.2s;
+            letter-spacing: 0.4px;
+        }
+        .lang-switcher a.lang-active {
+            background: white;
+            color: var(--primary-green);
+            box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+        }
+        .lang-switcher a:hover:not(.lang-active) {
+            color: #333;
+            background: rgba(255,255,255,0.5);
+        }
     </style>
 </head>
 <body>
@@ -433,7 +465,13 @@
                     <li class="nav-item"><a class="nav-link px-3 fw-medium" href="#blog">Journal</a></li>
                     <li class="nav-item"><a class="nav-link px-3 fw-medium" href="#faq">FAQ</a></li>
                     <li class="nav-item"><a class="nav-link px-3 fw-medium" href="#contact">Contact</a></li>
-                    <li class="nav-item ms-lg-3">
+                    <li class="nav-item ms-lg-2">
+                        <nav class="lang-switcher" aria-label="Language selection">
+                            <a href="https://promo.sktukrides.com/" class="lang-active" hreflang="en" aria-current="page" aria-label="English (current)">🇬🇧 EN</a>
+                            <a href="https://promo.sktukrides.com/ru/" hreflang="ru" rel="alternate" aria-label="Русский">🇷🇺 RU</a>
+                        </nav>
+                    </li>
+                    <li class="nav-item ms-lg-2">
                         <a href="https://www.sktukrides.com" class="btn btn-primary-custom rounded-pill px-4 fw-bold">ENQUIRE NOW!</a>
                     </li>
                 </ul>

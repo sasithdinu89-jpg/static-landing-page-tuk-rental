@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="google-site-verification" content="google54e658e74e1e68b9" />
     
     <!-- Primary Meta Tags -->
@@ -13,17 +14,24 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2830/2830238.png">
     <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/2830/2830238.png">
-    <link rel="canonical" href="https://promo.sktukrides.com/" />
+    <link rel="canonical" href="https://promo.sktukrides.com/ru/" />
     <link rel="preload" as="image" href="https://images.unsplash.com/photo-1506461883276-594a12b11cf3?q=80&w=1920&auto=format&fit=crop">
 
-    <meta name="keywords" content="tuk tuk rental sri lanka, rent a tuk tuk sri lanka, self drive tuk tuk sri lanka, tourist tuk tuk rental, sri lanka travel guide, backpacking sri lanka, tuk tuk holiday, sri lanka road trip, rent a 3 wheeler sri lanka, colombo tuk tuk rental, negombo tuk tuk hire, aac driving permit sri lanka">
+    <meta name="keywords" content="аренда тук-тука Шри-Ланка, тук-тук самостоятельное вождение Шри-Ланка, арендовать тук-тук Шри-Ланка, тур на тук-туке Шри-Ланка, путешествие по Шри-Ланке на тук-туке, аренда тук-тука для туристов, тук-тук Шри-Ланка цена, самостоятельная поездка Шри-Ланка, SK Tuk Rides, права для вождения тук-тука Шри-Ланка, аренда тук-тука Негомбо, аренда тук-тука Элла, аренда тук-тука Галле">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://promo.sktukrides.com/">
-    <meta property="og:title" content="SK Tuk Rides | Self-Drive Tuk Tuk Rental Sri Lanka">
-    <meta property="og:description" content="Experience the ultimate freedom. We provide the vehicle, the training, and the license. You provide the sense of adventure.">
+    <meta property="og:url" content="https://promo.sktukrides.com/ru/">
+    <meta property="og:title" content="Аренда тук-тука на Шри-Ланке | Самостоятельное вождение | SK Tuk Rides">
+    <meta property="og:description" content="Откройте для себя Шри-Ланку за рулём тук-тука. Арендуйте самостоятельно с обучением, страховкой и водительским удостоверением. От $11 в день!">
     <meta property="og:image" content="https://images.unsplash.com/photo-1552423814-258e923b729a?q=80&w=1200&auto=format&fit=crop">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="SK Tuk Rides - Аренда тук-тука Шри-Ланка">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="800">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="article:publisher" content="https://www.facebook.com/ssktours08">
+    <meta property="article:modified_time" content="2026-03-03T00:00:00+00:00">
 
     <!-- Language Alternates -->
     <link rel="alternate" hreflang="en" href="https://promo.sktukrides.com/" />
@@ -38,11 +46,16 @@
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://promo.sktukrides.com/">
-    <meta property="twitter:title" content="SK Tuk Rides | Self-Drive Tuk Tuk Rental Sri Lanka">
-    <meta property="twitter:description" content="Experience the ultimate freedom. We provide the vehicle, the training, and the license. You provide the sense of adventure.">
+    <meta property="twitter:url" content="https://promo.sktukrides.com/ru/">
+    <meta property="twitter:title" content="SK Tuk Rides | Аренда тук-тука на Шри-Ланке">
+    <meta property="twitter:description" content="Откройте для себя Шри-Ланку за рулём тук-тука. Обучение, страховка и права включены. От $11 в день!">
     <meta property="twitter:image" content="https://images.unsplash.com/photo-1552423814-258e923b729a?q=80&w=1200&auto=format&fit=crop">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://images.unsplash.com">
+    <link rel="dns-prefetch" href="https://i.postimg.cc">
     <!-- Bootstrap 5.3 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts -->
@@ -305,6 +318,40 @@
                 text-align: center;
             }
         }
+
+        /* Language Switcher Toggle */
+        .lang-switcher {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(35,139,69,0.1);
+            border: 1.5px solid rgba(35,139,69,0.25);
+            border-radius: 50px;
+            padding: 3px;
+            gap: 2px;
+        }
+        .lang-switcher a {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 7px 16px;
+            border-radius: 50px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: #555;
+            transition: all 0.25s ease;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+        .lang-switcher a.lang-active {
+            background: var(--primary-green);
+            color: #fff;
+            box-shadow: 0 2px 8px rgba(35,139,69,0.35);
+        }
+        .lang-switcher a:hover:not(.lang-active) {
+            color: var(--primary-green);
+            background: rgba(35,139,69,0.08);
+        }
     </style>
 </head>
 <body>
@@ -324,7 +371,13 @@
                     <li class="nav-item"><a class="nav-link px-3 fw-medium" href="#blog">Journal</a></li>
                     <li class="nav-item"><a class="nav-link px-3 fw-medium" href="#faq">FAQ</a></li>
                     <li class="nav-item"><a class="nav-link px-3 fw-medium" href="#contact">Contact</a></li>
-                    <li class="nav-item ms-lg-3">
+                    <li class="nav-item ms-lg-2">
+                        <nav class="lang-switcher" aria-label="Выбор языка">
+                            <a href="https://promo.sktukrides.com/" hreflang="en" rel="alternate" aria-label="English">🇬🇧 EN</a>
+                            <a href="https://promo.sktukrides.com/ru/" class="lang-active" hreflang="ru" aria-current="page" aria-label="Русский (текущий)">🇷🇺 RU</a>
+                        </nav>
+                    </li>
+                    <li class="nav-item ms-lg-2">
                         <a href="https://www.sktukrides.com" class="btn btn-primary-custom rounded-pill px-4 fw-bold">ENQUIRE NOW!</a>
                     </li>
                 </ul>
@@ -339,10 +392,10 @@
                 <div class="col-xl-8 col-lg-10">
                     <span class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill fw-bold">ВЫБОР ТУРИСТОВ #1 НА ШРИ-ЛАНКЕ</span>
                     <h1 class="hero-title">Исследуйте Шри-Ланку <br>Как Местный Житель: <span class="text-warning">Арендуйте Тук-Тук.</span></h1>
-                    <p class="lead fs-4 mb-5 opacity-75">Traveling to Sri Lanka? Experience the ultimate freedom with our premium self-drive Tuk Tuk rental service. Starting from just <strong>$11 per Day!</strong> We provide the vehicle, the training, and the license.</p>
+                    <p class="lead fs-4 mb-5 opacity-75">Едете на Шри-Ланку? Ощутите полную свободу с нашим премиальным тук-туком с самостоятельным управлением. От <strong>$11 в день!</strong> Предоставляем транспорт, обучение и водительские права.</p>
                     <div class="d-flex flex-wrap gap-3">
-                        <a href="https://www.sktukrides.com" class="btn btn-primary-custom btn-lg">Book Your Adventure</a>
-                        <a href="#fleet" class="btn btn-outline-light btn-lg rounded-pill px-4">Explore Fleet</a>
+                        <a href="https://www.sktukrides.com" class="btn btn-primary-custom btn-lg">Забронировать Приключение</a>
+                        <a href="#fleet" class="btn btn-outline-light btn-lg rounded-pill px-4">Посмотреть Парк</a>
                     </div>
                 </div>
             </div>
@@ -357,17 +410,17 @@
                     <img src="https://images.unsplash.com/photo-1588258524675-c696f01445eb?q=80&w=800&auto=format&fit=crop" width="800" height="533" loading="lazy" alt="Tourists driving Tuk Tuk in Sri Lanka" class="img-fluid rounded-4 shadow">
                 </div>
                 <div class="col-lg-6 ps-lg-5">
-                    <span class="text-primary fw-bold text-uppercase ls-2">For International Travelers</span>
-                    <h2 class="display-5 fw-bold mb-4">Why Tourists Choose SK Tuk Rides</h2>
-                    <p class="lead text-muted mb-4">Visiting Sri Lanka for the first time? Skip the crowded buses and expensive taxis. Renting a Tuk Tuk is the most authentic way to see our beautiful island.</p>
-                    <p class="mb-4 text-muted">Whether you are backpacking through the hill country or beach hopping down the south coast, having your own 3-wheeler gives you the freedom to stop whenever you want. We specialize in serving international tourists with:</p>
+                    <span class="text-primary fw-bold text-uppercase ls-2">Для Иностранных Туристов</span>
+                    <h2 class="display-5 fw-bold mb-4">Почему Туристы Выбирают SK Tuk Rides</h2>
+                    <p class="lead text-muted mb-4">Впервые на Шри-Ланке? Забудьте о переполненных автобусах и дорогих такси. Аренда тук-тука — самый аутентичный способ исследовать наш прекрасный остров.</p>
+                    <p class="mb-4 text-muted">Путешествуете ли вы через горные районы или прыгаете с пляжа на пляж вдоль южного побережья — собственный трёхколёсный транспорт даёт вам свободу останавливаться, когда захотите. Мы специализируемся на обслуживании иностранных туристов:</p>
                     <ul class="list-unstyled mb-4">
-                        <li class="mb-2 d-flex align-items-center"><i class="bi bi-check-circle-fill text-success me-3 fs-5"></i> Comprehensive Driving Lessons for Beginners</li>
-                        <li class="mb-2 d-flex align-items-center"><i class="bi bi-check-circle-fill text-success me-3 fs-5"></i> Full Insurance Coverage for Foreign Nationals</li>
-                        <li class="mb-2 d-flex align-items-center"><i class="bi bi-check-circle-fill text-success me-3 fs-5"></i> 24/7 English-Speaking Support Team</li>
-                        <li class="mb-2 d-flex align-items-center"><i class="bi bi-check-circle-fill text-success me-3 fs-5"></i> Pre-arranged Driving Permits (AAC)</li>
+                        <li class="mb-2 d-flex align-items-center"><i class="bi bi-check-circle-fill text-success me-3 fs-5"></i> Комплексное обучение вождению для начинающих</li>
+                        <li class="mb-2 d-flex align-items-center"><i class="bi bi-check-circle-fill text-success me-3 fs-5"></i> Полная страховка для иностранных граждан</li>
+                        <li class="mb-2 d-flex align-items-center"><i class="bi bi-check-circle-fill text-success me-3 fs-5"></i> Круглосуточная поддержка на русском и английском</li>
+                        <li class="mb-2 d-flex align-items-center"><i class="bi bi-check-circle-fill text-success me-3 fs-5"></i> Оформление водительского разрешения ААЦ</li>
                     </ul>
-                    <a href="https://www.sktukrides.com" class="btn btn-primary-custom">View All Services</a>
+                    <a href="https://www.sktukrides.com" class="btn btn-primary-custom">Все Услуги</a>
                 </div>
             </div>
         </div>
@@ -404,12 +457,11 @@
         <div class="container py-5">
             <div class="row align-items-center mb-5">
                 <div class="col-lg-6">
-                    <h2 class="display-5 fw-bold mb-4 text-primary">More Than Just <br>a Rental Service.</h2>
+                    <h2 class="display-5 fw-bold mb-4 text-primary">Больше, Чем Просто <br>Аренда.</h2>
                 </div>
                 <div class="col-lg-6">
-                    <p class="text-muted fs-5">We equip you with the skills, the paperwork, and the support to travel with confidence. It’s more than a rental; it’s peace of mind.</p>
+                    <p class="text-muted fs-5">Мы обеспечиваем вас навыками, документами и поддержкой для уверенного путешествия. Это больше, чем аренда — это спокойствие.</p>’’s 
                 </div>
-            </div>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="feature-card text-center">
