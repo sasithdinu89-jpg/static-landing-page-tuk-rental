@@ -372,6 +372,45 @@ cities.forEach(city => {
         '\n$1'
     );
 
+    // Remove homepage-only WebPage, ImageObject schemas (will be replaced with city-specific ones)
+    content = content.replace(
+        /<script type="application\/ld\+json">\s*\{\s*"@context": "https:\/\/schema\.org",\s*"@type": "ImageObject",[\s\S]*?\}\s*<\/script>\s*\n/,
+        ''
+    );
+    content = content.replace(
+        /<script type="application\/ld\+json">\s*\{\s*"@context": "https:\/\/schema\.org",\s*"@type": "WebPage",[\s\S]*?\}\s*<\/script>\s*\n/,
+        ''
+    );
+
+    // Update WebSite schema @id to stay consistent
+    content = content.replace(
+        /"@type": "WebSite",\s*"@id": "https:\/\/promo\.sktukrides\.com\/#website"/,
+        '"@type": "WebSite",\n      "@id": "https://promo.sktukrides.com/#website"'
+    );
+
+    // Replace homepage Organization @id with the same (consistent across site)
+    // Inject city-specific WebPage schema before </head> replacement marker
+    const cityWebPageSchema = `<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://promo.sktukrides.com/rent-tuk-tuk-${city.slug}.html#webpage",
+      "url": "https://promo.sktukrides.com/rent-tuk-tuk-${city.slug}.html",
+      "name": "Rent a Tuk Tuk in ${city.name}, Sri Lanka | Self-Drive Hire | SK Tuk Rides",
+      "description": "${city.desc} Full training, insurance, and AAC driving permit included. From $11/day.",
+      "isPartOf": { "@id": "https://promo.sktukrides.com/#website" },
+      "about": { "@id": "https://promo.sktukrides.com/#organization" },
+      "dateModified": "${new Date().toISOString().split('T')[0]}T00:00:00+00:00",
+      "inLanguage": "en-US",
+      "potentialAction": { "@type": "ReadAction", "target": ["https://promo.sktukrides.com/rent-tuk-tuk-${city.slug}.html"] }
+    }
+    </script>`;
+
+    content = content.replace(
+        /(<\/script>\s*\n\s*<style>)/,
+        `</script>\n    ${cityWebPageSchema}\n\n    <style>`
+    );
+
     // Replace FAQ schema with city-specific questions
     const faqSchemaJson = JSON.stringify({
         "@context": "https://schema.org",
