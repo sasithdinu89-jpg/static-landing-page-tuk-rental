@@ -8,6 +8,8 @@ const cities = [
     {
         slug: 'negombo',
         name: 'Negombo',
+        lat: 7.2081,
+        lng: 79.8360,
         desc: 'Start your Sri Lanka adventure from Negombo — the closest Tuk Tuk rental to Bandaranaike International Airport.',
         keywords: 'rent tuk tuk negombo, tuk tuk rental negombo sri lanka, negombo tuk tuk hire, self drive tuk tuk negombo, tuk tuk near colombo airport, sri lanka airport tuk tuk rental, negombo 3 wheeler hire, rent a tuk tuk sri lanka, tuk tuk rental price sri lanka, aac driving permit sri lanka',
         ogDescription: 'Start your Sri Lanka adventure in Negombo! The closest tuk tuk rental to the airport. Full training, insurance, and AAC driving permit included.',
@@ -58,7 +60,8 @@ const cities = [
     {
         slug: 'ella',
         name: 'Ella',
-        desc: 'Explore the misty tea plantations and breathtaking highland scenery of Ella in your own self-drive Tuk Tuk.',
+        lat: 6.8667,
+        lng: 81.0500,
         keywords: 'rent tuk tuk ella sri lanka, tuk tuk rental ella, ella tuk tuk hire, self drive tuk tuk ella, nine arch bridge ella tuk tuk, ella rock tuk tuk, hill country tuk tuk rental, tuk tuk ella to nuwara eliya, rent a tuk tuk sri lanka, aac driving permit sri lanka',
         ogDescription: 'Explore misty tea estates and the famous Nine Arch Bridge around Ella in your own tuk tuk. Full training, insurance, and AAC permit included.',
         locationContent: `
@@ -108,6 +111,8 @@ const cities = [
     {
         slug: 'mirissa',
         name: 'Mirissa',
+        lat: 5.9483,
+        lng: 80.4516,
         desc: 'Cruise the stunning southern coast and whale-watching shores of Mirissa in your own self-drive Tuk Tuk.',
         keywords: 'rent tuk tuk mirissa sri lanka, tuk tuk rental mirissa, mirissa tuk tuk hire, self drive tuk tuk south coast, tuk tuk mirissa to galle, mirissa whale watching tuk tuk, southern sri lanka tuk tuk rental, rent a tuk tuk sri lanka, tuk tuk weligama, aac driving permit sri lanka',
         ogDescription: 'Drive the beautiful southern coastline from Mirissa to Galle in your own tuk tuk. Whale watching, surf beaches, and secret coves await. Insurance and permit included.',
@@ -158,6 +163,8 @@ const cities = [
     {
         slug: 'kandy',
         name: 'Kandy',
+        lat: 7.2906,
+        lng: 80.6337,
         desc: 'Navigate the cultural capital Kandy and the misty Hanthana mountains with our premium self-drive Tuk Tuks.',
         keywords: 'rent tuk tuk kandy sri lanka, tuk tuk rental kandy, kandy tuk tuk hire, self drive tuk tuk kandy, tuk tuk kandy to pinnawala, temple of the tooth kandy tuk tuk, cultural triangle tuk tuk rental, rent a tuk tuk sri lanka, kandy peradeniya tuk tuk, aac driving permit sri lanka',
         ogDescription: 'Explore Kandy\'s temples, elephant orphanages, and mountain roads in your own tuk tuk. The cultural capital awaits — insurance and AAC permit included.',
@@ -208,6 +215,8 @@ const cities = [
     {
         slug: 'galle',
         name: 'Galle',
+        lat: 6.0535,
+        lng: 80.2210,
         desc: 'Visit the UNESCO-listed Galle Fort and the pristine beaches of Unawatuna on your own schedule.',
         keywords: 'rent tuk tuk galle sri lanka, tuk tuk rental galle fort, galle tuk tuk hire, self drive tuk tuk galle, tuk tuk galle to unawatuna, tuk tuk galle to hikkaduwa, southern sri lanka tuk tuk rental, rent a tuk tuk sri lanka, galle fort tuk tuk, aac driving permit sri lanka',
         ogDescription: 'Explore Galle Fort (UNESCO World Heritage) and the beautiful southern beaches by tuk tuk. From Unawatuna to Hikkaduwa — insurance and AAC permit included.',
@@ -336,6 +345,31 @@ cities.forEach(city => {
     content = content.replace(
         /"name": "SK Tuk Rides"/,
         `"name": "SK Tuk Rides - ${city.name} Branch"`
+    );
+
+    // Replace generic country areaServed with city-specific geo data
+    content = content.replace(
+        /"areaServed": \{\s*"@type": "Country",\s*"name": "Sri Lanka"\s*\}/,
+        JSON.stringify({
+            "areaServed": {
+                "@type": "City",
+                "name": city.name,
+                "geo": { "@type": "GeoCoordinates", "latitude": city.lat, "longitude": city.lng },
+                "containedInPlace": { "@type": "Country", "name": "Sri Lanka" }
+            }
+        }).slice(1, -1).trim()
+    );
+
+    // Remove homepage-only ItemList schema from city pages
+    content = content.replace(
+        /<script type="application\/ld\+json">\s*\{\s*"@context": "https:\/\/schema\.org",\s*"@type": "ItemList",[\s\S]*?\}\s*<\/script>\s*\n/,
+        ''
+    );
+
+    // Clean up leftover Language Alternates comment after hreflang removal
+    content = content.replace(
+        /\s*<!-- Language Alternates -->\s*\n(\s*<!-- Twitter -->)/,
+        '\n$1'
     );
 
     // Replace FAQ schema with city-specific questions
