@@ -1,33 +1,32 @@
-# SK Tuk Rides - SEO Landing Page (The Shield)
+﻿# SK Tuk Rides Promo SEO Site
 
-This is the SEO-optimized landing page for **SK Tuk Rides**. It is designed to act as the primary "front door" for Google search results while your React application handles the booking logic.
+This repository holds the static promo site for `https://promo.sktukrides.com/`.
+The promo site targets discovery, organic search traffic, and lead generation for foreign travelers looking for self-drive tuk tuk rentals in Sri Lanka.
 
-## 🚀 Deployment Strategy
+## Deployment
 
-To achieve the best SEO results:
-1. **Landing Page:** Deploy these files (index.html, robots.txt, sitemap.xml, assets/) to your main domain: `https://www.sktukrides.com`.
-2. **React App:** Move your current React application to a subdomain: `https://booking.sktukrides.com`.
-3. **Linkage:** Ensure all "Book Now" buttons on this landing page point to `https://booking.sktukrides.com`.
+1. Deploy the static promo files in this repository to `https://promo.sktukrides.com/`.
+2. Keep booking CTAs pointing to the main booking site: `https://www.sktukrides.com/`.
+3. Keep `robots.txt`, `sitemap.xml`, and the generated location pages in sync whenever new indexable pages are added.
 
-## 📁 File Structure
-- `index.html`: Modern Bootstrap 5.3 landing page with JSON-LD SEO schema.
-- `robots.txt`: Directs Google bots.
-- `sitemap.xml`: Helps Google index the page quickly.
-- `assets/`: Folder for your images.
+## Main Files
 
-## 🖼️ Required Images (Place in /assets)
-You need to prepare these 4 high-quality images for the site to look professional:
+- `index.html`: English homepage for the promo site.
+- `generate_pages.js`: Generates the destination landing pages from the homepage template.
+- `rent-tuk-tuk-*.html`: Generated destination pages for core pickup and route-start intents.
+- `robots.txt`: Crawl directives for the promo host.
+- `sitemap.xml`: Sitemap for indexable promo pages only.
+- `assets/`: Local images used by the promo pages.
 
-1. `hero-tuktuk.jpg` (1920x1080px): A stunning shot of a Tuk Tuk in a famous Sri Lankan location (e.g., Sigiriya).
-2. `tuktuk-classic.jpg` (800x600px): A clean, side-profile shot of your standard rental Tuk Tuk.
-3. `tuktuk-premium.jpg` (800x600px): A shot showing a premium/upgraded Tuk Tuk.
-4. `og-image.jpg` (1200x630px): A branded image used for social media sharing (Facebook/WhatsApp).
+## Current Contact And CTA Settings
 
-## 🛠️ SEO Tips for SK Tuk Rides
-- **Google Business Profile:** Create/Verify your business on Google Maps for Sigiriya.
-- **Keywords:** The `index.html` is already optimized for keywords like "Self-drive Tuk Tuk Rental Sri Lanka".
-- **Speed:** This static page is ultra-fast, which is a major ranking factor for Google.
+- Booking site: `https://www.sktukrides.com/`
+- WhatsApp: `+94 77 947 7196`
+- Secondary phone: `+94 77 904 4169`
+- Email: `sktukrides@gmail.com`
 
----
-*Generated for SK Tuk Rides - 2024*
-*Contact: sktukride@gmail.com | +94 76 829 2995*
+## Notes
+
+- Unsupported or incomplete language folders should stay parked as `noindex` until quality content exists.
+- Do not add review schema, testimonials, or team claims unless the same proof is visible on-page and verified.
+- If new indexable pages are created, update the homepage internal links and `sitemap.xml` in the same change.
