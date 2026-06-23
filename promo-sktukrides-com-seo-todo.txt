@@ -1,0 +1,319 @@
+SK Tuk Rides Promo Site SEO Todo List
+Target site: https://promo.sktukrides.com/
+Reference strategy: ../tuk-rides-seo-contents/International-SEO-Roadmap-SK-Tuk-Rides.txt
+Scope: Only the promo / middleware SEO website
+
+Goal
+Make promo.sktukrides.com the strongest search entry point for foreign visitors searching for tuk tuk rental in Sri Lanka.
+The site must win on:
+- relevance
+- trust
+- content depth
+- technical SEO
+- user experience
+- conversion rate
+
+Execution rules
+- Do not skip tasks by assumption.
+- Do not add pages that repeat the same intent.
+- Every page must target one primary search intent.
+- Every new page must have unique title, meta description, H1, internal links, FAQ, and CTA.
+- All content must be written for foreign travelers.
+- Keep the promo site focused on discovery and lead generation.
+- Main site booking flows are out of scope unless a promo-page needs a link to them.
+
+Priority order
+P0 = must do first
+P1 = high impact
+P2 = expansion
+P3 = ongoing
+
+P0. Technical SEO foundation
+1. Audit the homepage and all current landing pages.
+2. Verify every indexable page has:
+   - canonical URL
+   - correct title tag
+   - correct meta description
+   - one H1 only
+   - open graph tags
+   - Twitter card tags
+   - valid schema markup
+   - internal links to related pages
+3. Verify `robots.txt` allows the correct pages.
+4. Verify `sitemap.xml` contains every indexable page.
+5. Verify `hreflang` is valid on every language version.
+6. Check Search Console for:
+   - indexing errors
+   - duplicate titles
+   - pages excluded by noindex
+   - crawl issues
+   - sitemap warnings
+7. Fix any broken internal links.
+8. Fix any broken image paths or slow external image URLs.
+9. Make sure the site is mobile-friendly on all main pages.
+
+P0. Homepage optimization
+10. Rewrite the homepage hero section to target the main foreign-search intent.
+11. Make the homepage clearly answer:
+    - what the business is
+    - where it operates
+    - what foreigners get
+    - why it is safe
+    - how to book
+12. Add a clear above-the-fold CTA for:
+    - WhatsApp
+    - inquiry form
+    - book now
+13. Add trust signals on the homepage:
+    - reviews
+    - support hours
+    - permit support
+    - insurance support
+    - lesson support
+14. Add a short FAQ block on the homepage.
+15. Add one strong internal link block from homepage to all major money pages.
+
+P1. Update existing location pages
+16. Review and improve:
+    - `rent-tuk-tuk-negombo.html`
+    - `rent-tuk-tuk-kandy.html`
+    - `rent-tuk-tuk-ella.html`
+    - `rent-tuk-tuk-mirissa.html`
+    - `rent-tuk-tuk-galle.html`
+17. For each location page, confirm the page speaks directly to that destination.
+18. Replace generic copy with location-specific copy.
+19. Add location-specific FAQs.
+20. Add route suggestions from that location.
+21. Add strong CTA blocks to WhatsApp and booking.
+22. Add local trust signals for each page if available.
+23. Make sure each page has unique metadata.
+24. Make sure each page is linked from the homepage and from relevant cluster pages.
+
+P1. Build the main high-intent pages
+25. Create a main page for:
+    - self-drive tuk tuk rental Sri Lanka
+26. Create a main page for:
+    - tuk tuk driving permit Sri Lanka
+27. Create a main page for:
+    - tuk tuk rental price Sri Lanka
+28. Create a main page for:
+    - tuk tuk driving lesson Sri Lanka
+29. Create a main page for:
+    - tuk tuk rental insurance Sri Lanka
+30. Create a main page for:
+    - tuk tuk rental for foreigners
+31. Create a main page for:
+    - tuk tuk rental for solo travelers
+32. Create a main page for:
+    - tuk tuk rental for couples
+33. Create a main page for:
+    - tuk tuk rental for families
+34. Create a main page for:
+    - tuk tuk rental for digital nomads
+35. Create a main page for:
+    - tuk tuk road trip Sri Lanka
+36. Create a main page for:
+    - tuk tuk rental near Colombo Airport / Negombo
+
+P1. Build route pages
+37. Create route pages for:
+    - Negombo to Kandy
+    - Kandy to Ella
+    - Ella to Mirissa
+    - Galle to Colombo
+    - Colombo Airport to South Coast
+38. Each route page must include:
+    - route overview
+    - expected travel time
+    - driving tips
+    - fuel / cost notes
+    - why the route is useful for foreigners
+    - CTA
+
+P1. Content cluster pages
+39. Create legal and permit content:
+    - IDP requirements
+    - AAC permit process
+    - what foreigners can drive in Sri Lanka
+40. Create beginner confidence content:
+    - how hard is it to drive a tuk tuk
+    - first 30 minutes as a new driver
+    - how the gears and controls work
+    - common beginner mistakes
+41. Create trip planning content:
+    - best tuk tuk routes in Sri Lanka
+    - road safety tips
+    - fuel cost guide
+    - weather and season planning
+42. Create comparison content:
+    - tuk tuk vs taxi
+    - tuk tuk vs car rental
+    - tuk tuk vs bus
+    - self-drive vs driver
+43. Create FAQ content that answers real foreign visitor questions.
+
+P1. Trust and E-E-A-T
+44. Add a real business / company profile page.
+45. Add a founder or team page if available.
+46. Add a safety and support page.
+47. Add an insurance explanation page.
+48. Add a permit support page.
+49. Add a 24/7 roadside support page.
+50. Add a "why foreigners choose us" page.
+51. Add a reviews page with real customer proof.
+52. Add real photos of:
+    - vehicles
+    - handovers
+    - lessons
+    - support process
+    - routes
+
+P1. Schema markup
+53. Validate current schema on all major pages.
+54. Add or improve schema where relevant:
+    - Organization
+    - LocalBusiness
+    - AutoRental or VehicleRental
+    - FAQPage
+    - HowTo
+    - VideoObject
+    - BreadcrumbList
+    - Review / AggregateRating only where visible on-page
+55. Make sure schema data matches the visible page content exactly.
+
+P1. Conversion assets
+56. Add a sticky WhatsApp button site-wide.
+57. Add a short inquiry form on money pages.
+58. Add a clear "what is included" block.
+59. Add a short pricing summary block.
+60. Add a permit checklist lead magnet.
+61. Add a "first time in Sri Lanka" guide lead magnet.
+62. Add a route planner or itinerary helper.
+63. Add trust badges and fast-response messaging.
+64. Add FAQ above the fold on mobile if needed.
+
+P1. Media and creative assets
+65. Replace weak stock-style hero images.
+66. Use original branded photos for:
+    - homepage hero
+    - location pages
+    - route pages
+    - FAQ/support pages
+67. Convert large images to efficient formats.
+68. Compress images for speed.
+69. Add descriptive alt text to every important image.
+70. Name image files with real search intent.
+71. Embed short videos on relevant pages.
+72. Add video transcripts under the video.
+
+P2. International targeting
+73. Review the current language set.
+74. Approved languages for the promo site:
+    - English
+    - Russian
+    - Estonian
+75. Keep only languages that can be supported with quality.
+76. For every language page, verify:
+    - title
+    - meta description
+    - hreflang
+    - CTA language
+    - internal links
+77. Use Search Console data to decide which languages deserve expansion.
+
+P2. Internal linking
+78. Link every blog/content page to one money page.
+79. Link every money page back to its supporting cluster pages.
+80. Add related page blocks at the bottom of each article.
+81. Add route links from city pages.
+82. Add permit links from booking pages.
+83. Add comparison links from onboarding or FAQ pages.
+
+P2. Search Console workflow
+84. Check GSC every week.
+85. Inspect new URLs after publishing.
+86. Find queries with high impressions and low CTR.
+87. Find pages with high impressions and low rankings.
+88. Use GSC queries to decide the next content pages.
+89. Watch for duplicate titles and thin pages.
+90. Watch for indexing drops after updates.
+
+P2. Off-site authority
+91. Build links and mentions from:
+    - travel blogs
+    - Sri Lanka travel guides
+    - backpacker communities
+    - digital nomad communities
+    - hostel sites
+    - tourism blogs
+    - YouTube creators
+    - Reddit travel threads
+92. Publish helpful assets that can earn links:
+    - cost breakdown
+    - route maps
+    - permit guide
+    - safety guide
+    - budget guide
+93. Share content only where it adds value.
+94. Avoid spammy link building.
+
+P3. Ongoing content cadence
+95. Publish new content on a fixed schedule.
+96. Update existing pages when search data changes.
+97. Refresh stats, pricing references, and permit details regularly.
+98. Add new FAQs from real user questions.
+99. Add new route pages when demand appears in GSC.
+100. Recheck internal links after each new page publish.
+
+P3. Video distribution
+101. Turn every strong article into a short video.
+102. Publish the same topic on TikTok and YouTube Shorts.
+103. Embed the same video on the matching page.
+104. Add VideoObject schema for the page where possible.
+105. Make sure the video supports the page intent, not just brand visibility.
+
+P3. Measurement
+106. Track:
+    - impressions
+    - clicks
+    - CTR
+    - average position
+    - organic leads
+    - WhatsApp inquiries
+    - form submissions
+    - review count
+    - conversion rate by page
+107. Review the top performing pages every month.
+108. Expand only the topics that show real demand.
+
+Confirmed settings
+- Final booking destination for CTA buttons:
+  - https://www.sktukrides.com/
+- Final WhatsApp / inquiry numbers:
+  - +94 77 947 7196
+  - +94 77 904 4169
+- Trust page assets:
+  - Real photos are not available at the moment.
+  - Team bios are not available at the moment.
+  - Customer review proof is not available at the moment.
+- Site scope:
+  - All SEO-related content stays on https://promo.sktukrides.com/
+  - The main site https://www.sktukrides.com/ should only be used as the booking destination
+
+Execution note
+- Because real proof assets are not available now, the promo site must rely more heavily on:
+  - clear explanations
+  - technical accuracy
+  - strong FAQs
+  - route intent coverage
+  - permit guidance
+  - location specificity
+  - consistent internal linking
+- Do not invent testimonials, team details, or photos that do not exist.
+
+Done criteria
+- Promo site has strong coverage for foreign traveler search intent.
+- Main money pages rank for multiple high-intent queries.
+- Search Console shows growth in impressions, clicks, and CTR.
+- The site has a clear path from search result to inquiry.
+- The site has enough trust signals to compete internationally.
