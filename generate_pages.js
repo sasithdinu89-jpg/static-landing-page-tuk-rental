@@ -1,4 +1,4 @@
-﻿const fs = require('fs');
+const fs = require('fs');
 const path = require('path');
 
 const templatePath = path.join(__dirname, 'index.html');
@@ -53,8 +53,8 @@ const cities = [
         faqSchema: [
             { q: 'Can I pick up a Tuk Tuk directly from Negombo airport?', a: 'Yes! Negombo is only 8 km from Bandaranaike International Airport. We can arrange a pickup or delivery to your Negombo hotel on the same day you land, so you can start exploring immediately.' },
             { q: 'What is the best route to drive from Negombo?', a: 'The coastal strip south toward Colombo and the Dutch Canal road north toward Chilaw are both fantastic. For a wilder route, head east to the Muthurajawela wetlands. Most tourists use Negombo as a starting point for a clockwise island loop.' },
-            { q: 'Does the rental include insurance?', a: 'Yes, all our Tuk Tuk rentals come with comprehensive rental insurance that covers you and the vehicle. We want you to explore Sri Lanka with total peace of mind.' },
-            { q: 'How much does it cost to rent a Tuk Tuk in Negombo?', a: 'Our Negombo rental rates start from $11 USD per day for long-term bookings. The standard Explorer model is $16/day and the premium Pro model is $18/day, including insurance and AAC permit processing.' }
+            { q: 'Does the rental include insurance?', a: 'Yes. A non-refundable Comprehensive Rental Insurance fee of USD 60 applies to every rental. Under our policy, your maximum liability for accidental damage is USD 100 in total (including the USD 60 insurance fee). If repair costs are USD 100 or less, you only pay the actual repair cost. If they exceed USD 100, SK Tuk Rides covers all costs above your maximum liability of USD 100.' },
+            { q: 'How much does it cost to rent a Tuk Tuk in Negombo?', a: 'Our Negombo rental rates start from $11 USD per day for long-term bookings. The standard Explorer model is $16/day and the premium Pro model is $18/day, with AAC permit processing included (a non-refundable USD 60 comprehensive insurance fee applies to every rental).' }
         ],
         positioning: {
             eyebrow: 'Why Start in Negombo',
@@ -117,8 +117,8 @@ const cities = [
         faqSchema: [
             { q: 'Is it safe to drive a Tuk Tuk on the mountain roads around Ella?', a: 'Yes, with proper training it is very manageable. The roads around Ella are scenic but have tight hairpin bends, so we give specific mountain-driving tips as part of your lesson. Our tuk tuks are well-maintained with reliable brakes for hill country driving.' },
             { q: 'What are the best places to visit by Tuk Tuk near Ella?', a: 'The Nine Arch Bridge at Demodara, Little Adam\'s Peak trailhead, Ravana Falls, and the Ella Rock viewpoint are all easily reachable within 15 minutes by tuk tuk. For a longer day trip, drive to Nuwara Eliya through the tea estates.' },
-            { q: 'Does the rental include insurance?', a: 'Yes, all our Tuk Tuk rentals come with comprehensive rental insurance that covers you and the vehicle. We want you to explore Sri Lanka with total peace of mind.' },
-            { q: 'How much does it cost to rent a Tuk Tuk in Ella?', a: 'Our Ella rental rates start from $11 USD per day for long-term bookings. The standard Explorer model is $16/day and the premium Pro model is $18/day, including insurance and AAC permit processing.' }
+            { q: 'Does the rental include insurance?', a: 'Yes. A non-refundable Comprehensive Rental Insurance fee of USD 60 applies to every rental. Under our policy, your maximum liability for accidental damage is USD 100 in total (including the USD 60 insurance fee). If repair costs are USD 100 or less, you only pay the actual repair cost. If they exceed USD 100, SK Tuk Rides covers all costs above your maximum liability of USD 100.' },
+            { q: 'How much does it cost to rent a Tuk Tuk in Ella?', a: 'Our Ella rental rates start from $11 USD per day for long-term bookings. The standard Explorer model is $16/day and the premium Pro model is $18/day, with AAC permit processing included (a non-refundable USD 60 comprehensive insurance fee applies to every rental).' }
         ],
         positioning: {
             eyebrow: 'Why Start in Ella',
@@ -181,8 +181,8 @@ const cities = [
         faqSchema: [
             { q: 'Can I drive a Tuk Tuk from Mirissa to Galle?', a: 'Absolutely! The 35 km coastal road from Mirissa to Galle is one of the most beautiful drives in Sri Lanka. The road is flat, well-paved, and passes Unawatuna beach and Jungle Beach. Allow about 1.5 hours each way to stop and enjoy the views.' },
             { q: 'What are the must-see spots near Mirissa by Tuk Tuk?', a: 'Parrot Rock (5 min), Secret Beach (5 min), Weligama surf beach (10 min), and Coconut Tree Hill (15 min) are all easily accessible. For a full day, drive to Galle Fort or east to Tangalle\'s lagoon beaches.' },
-            { q: 'Does the rental include insurance?', a: 'Yes, all our Tuk Tuk rentals come with comprehensive rental insurance that covers you and the vehicle. We want you to explore Sri Lanka with total peace of mind.' },
-            { q: 'How much does it cost to rent a Tuk Tuk in Mirissa?', a: 'Our Mirissa rental rates start from $11 USD per day for long-term bookings. The standard Explorer model is $16/day and the premium Pro model is $18/day, including insurance and AAC permit processing.' }
+            { q: 'Does the rental include insurance?', a: 'Yes. A non-refundable Comprehensive Rental Insurance fee of USD 60 applies to every rental. Under our policy, your maximum liability for accidental damage is USD 100 in total (including the USD 60 insurance fee). If repair costs are USD 100 or less, you only pay the actual repair cost. If they exceed USD 100, SK Tuk Rides covers all costs above your maximum liability of USD 100.' },
+            { q: 'How much does it cost to rent a Tuk Tuk in Mirissa?', a: 'Our Mirissa rental rates start from $11 USD per day for long-term bookings. The standard Explorer model is $16/day and the premium Pro model is $18/day, with AAC permit processing included (a non-refundable USD 60 comprehensive insurance fee applies to every rental).' }
         ],
         positioning: {
             eyebrow: 'Why Start in Mirissa',
@@ -245,8 +245,8 @@ const cities = [
         faqSchema: [
             { q: 'Is driving a Tuk Tuk in Kandy\'s city centre easy?', a: 'Kandy city centre can be busy, especially near the Temple of the Tooth. We recommend parking at the lakeside and walking the centre. The real joy is on the mountain roads around Hanthana and the A1 highway to Pinnawala - these are straightforward and extremely scenic.' },
             { q: 'What are the best day trips from Kandy by Tuk Tuk?', a: 'Pinnawala Elephant Orphanage (45 min), Peradeniya Botanical Gardens (15 min), Dambulla Cave Temple (1.5 hrs), and Sigiriya Rock Fortress (2 hrs) are all reachable by tuk tuk. Kandy makes a perfect base for the entire Cultural Triangle.' },
-            { q: 'Does the rental include insurance?', a: 'Yes, all our Tuk Tuk rentals come with comprehensive rental insurance that covers you and the vehicle. We want you to explore Sri Lanka with total peace of mind.' },
-            { q: 'How much does it cost to rent a Tuk Tuk in Kandy?', a: 'Our Kandy rental rates start from $11 USD per day for long-term bookings. The standard Explorer model is $16/day and the premium Pro model is $18/day, including insurance and AAC permit processing.' }
+            { q: 'Does the rental include insurance?', a: 'Yes. A non-refundable Comprehensive Rental Insurance fee of USD 60 applies to every rental. Under our policy, your maximum liability for accidental damage is USD 100 in total (including the USD 60 insurance fee). If repair costs are USD 100 or less, you only pay the actual repair cost. If they exceed USD 100, SK Tuk Rides covers all costs above your maximum liability of USD 100.' },
+            { q: 'How much does it cost to rent a Tuk Tuk in Kandy?', a: 'Our Kandy rental rates start from $11 USD per day for long-term bookings. The standard Explorer model is $16/day and the premium Pro model is $18/day, with AAC permit processing included (a non-refundable USD 60 comprehensive insurance fee applies to every rental).' }
         ],
         positioning: {
             eyebrow: 'Why Start in Kandy',
@@ -309,8 +309,8 @@ const cities = [
         faqSchema: [
             { q: 'Can I drive a Tuk Tuk inside Galle Fort?', a: 'The lanes inside Galle Fort are very narrow. We recommend parking your tuk tuk at the main gate and exploring the fort on foot - it only takes about 1-2 hours to walk the full perimeter walls. Your tuk tuk is then perfect for reaching the beaches outside the fort.' },
             { q: 'What beaches can I reach from Galle by Tuk Tuk?', a: 'Unawatuna (5 min), Jungle Beach (10 min), Dalawella Beach (15 min), Koggala Lake (20 min), and Hikkaduwa (30 min) are all accessible. Drive east toward Mirissa and Weligama for even more stunning coastline.' },
-            { q: 'Does the rental include insurance?', a: 'Yes, all our Tuk Tuk rentals come with comprehensive rental insurance that covers you and the vehicle. We want you to explore Sri Lanka with total peace of mind.' },
-            { q: 'How much does it cost to rent a Tuk Tuk in Galle?', a: 'Our Galle rental rates start from $11 USD per day for long-term bookings. The standard Explorer model is $16/day and the premium Pro model is $18/day, including insurance and AAC permit processing.' }
+            { q: 'Does the rental include insurance?', a: 'Yes. A non-refundable Comprehensive Rental Insurance fee of USD 60 applies to every rental. Under our policy, your maximum liability for accidental damage is USD 100 in total (including the USD 60 insurance fee). If repair costs are USD 100 or less, you only pay the actual repair cost. If they exceed USD 100, SK Tuk Rides covers all costs above your maximum liability of USD 100.' },
+            { q: 'How much does it cost to rent a Tuk Tuk in Galle?', a: 'Our Galle rental rates start from $11 USD per day for long-term bookings. The standard Explorer model is $16/day and the premium Pro model is $18/day, with AAC permit processing included (a non-refundable USD 60 comprehensive insurance fee applies to every rental).' }
         ],
         positioning: {
             eyebrow: 'Why Start in Galle',
