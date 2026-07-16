@@ -9,6 +9,7 @@ Items already handled in the current repo can stay listed here until they are de
 - [ ] Request indexing for the homepage and five location pages once.
 - [x] Fix remaining page-level SEO issues in the repo.
 - [x] Draft the social media plan and content templates.
+- [x] Create the weekly content title plan.
 - [ ] Standardize social profiles and booking links across public channels.
 - [x] Create reusable content templates for cost comparison, route map, and FAQ explainer.
 
