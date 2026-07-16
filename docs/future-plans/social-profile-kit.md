@@ -16,7 +16,7 @@ Use this copy to keep the brand name, bio, and booking links consistent across p
 
 ## Canonical WhatsApp
 
-- `+94 77 947 7196`
+- `+94 76 829 2995`
 
 ## Short Bio
 

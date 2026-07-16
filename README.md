@@ -21,7 +21,7 @@ The promo site targets discovery, organic search traffic, and lead generation fo
 ## Current Contact And CTA Settings
 
 - Booking site: `https://www.sktukrides.com/`
-- WhatsApp: `+94 77 947 7196`
+- WhatsApp: `+94 76 829 2995`
 - Secondary phone: `+94 77 904 4169`
 - Email: `sktukrides@gmail.com`
 
