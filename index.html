@@ -36,7 +36,7 @@
     <meta property="og:image:height" content="512">
     <meta property="og:image:type" content="image/png">
     <meta property="article:publisher" content="https://www.facebook.com/ssktours08">
-    <meta property="article:modified_time" content="2026-06-23T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-08-03T00:00:00+00:00">
 
     <!-- Language Alternates -->
     <link rel="alternate" hreflang="en" href="https://promo.sktukrides.com/" />
@@ -513,12 +513,372 @@
             }
         }
 
+        /* ===== AUGUST PROMO ANNOUNCEMENT BAR ===== */
+        #promo-announcement-bar {
+            background: linear-gradient(90deg, #0d3b1a 0%, #1a6b35 40%, #FFD700 100%);
+            color: #fff;
+            font-size: 0.92rem;
+            font-weight: 700;
+            padding: 10px 20px;
+            text-align: center;
+            position: relative;
+            z-index: 1100;
+            letter-spacing: 0.02em;
+            overflow: hidden;
+        }
+        #promo-announcement-bar .promo-bar-inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+        #promo-announcement-bar .promo-bar-pill {
+            background: rgba(255,255,255,0.18);
+            border: 1.5px solid rgba(255,255,255,0.35);
+            border-radius: 50px;
+            padding: 3px 14px;
+            font-size: 0.88rem;
+            white-space: nowrap;
+        }
+        #promo-announcement-bar .promo-bar-badge {
+            background: #FFD700;
+            color: #0d3b1a;
+            border-radius: 50px;
+            padding: 3px 14px;
+            font-weight: 800;
+            font-size: 0.88rem;
+            text-transform: uppercase;
+            white-space: nowrap;
+            animation: promoPulse 2s ease-in-out infinite;
+        }
+        #promo-announcement-bar .promo-bar-dismiss {
+            position: absolute;
+            right: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: rgba(255,255,255,0.75);
+            font-size: 1.1rem;
+            cursor: pointer;
+            line-height: 1;
+            padding: 4px;
+        }
+        #promo-announcement-bar .promo-bar-dismiss:hover { color: #fff; }
+        @keyframes promoPulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(255,215,0,0.5); }
+            50% { box-shadow: 0 0 0 7px rgba(255,215,0,0); }
+        }
+
+        /* ===== AUGUST PROMO SECTION ===== */
+        #august-promo {
+            background: linear-gradient(135deg, #0a2212 0%, #10311b 50%, #1c5230 100%);
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        #august-promo::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(255,215,0,0.12) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        #august-promo::after {
+            content: '';
+            position: absolute;
+            bottom: -80px;
+            left: -80px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(35,139,69,0.18) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .promo-section-badge {
+            display: inline-block;
+            background: linear-gradient(90deg, #FFD700, #FFA500);
+            color: #0d3b1a;
+            font-weight: 800;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            border-radius: 50px;
+            padding: 6px 18px;
+            margin-bottom: 18px;
+            animation: promoPulse 2.5s ease-in-out infinite;
+        }
+        .promo-title {
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 10px;
+        }
+        .promo-title span { color: #FFD700; }
+        .promo-subtitle {
+            font-size: 1.05rem;
+            opacity: 0.8;
+            margin-bottom: 32px;
+        }
+        /* Pricing Cards */
+        .promo-pricing-wrap {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        .promo-price-card {
+            flex: 1;
+            min-width: 200px;
+            background: rgba(255,255,255,0.07);
+            border: 2px solid rgba(255,255,255,0.15);
+            border-radius: 22px;
+            padding: 24px 20px;
+            text-align: center;
+            transition: 0.3s;
+            backdrop-filter: blur(8px);
+            position: relative;
+            overflow: hidden;
+        }
+        .promo-price-card:hover {
+            border-color: #FFD700;
+            background: rgba(255,215,0,0.08);
+            transform: translateY(-4px);
+        }
+        .promo-price-card.featured {
+            border-color: #FFD700;
+            background: rgba(255,215,0,0.1);
+        }
+        .promo-price-card .tag {
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            opacity: 0.7;
+            margin-bottom: 8px;
+        }
+        .promo-price-card .price {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #FFD700;
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+        .promo-price-card .price sup {
+            font-size: 1.4rem;
+            vertical-align: top;
+            margin-top: 10px;
+        }
+        .promo-price-card .price-label {
+            font-size: 0.9rem;
+            opacity: 0.75;
+            margin-bottom: 12px;
+        }
+        .promo-price-card .duration-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.12);
+            border-radius: 50px;
+            padding: 4px 14px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        .promo-price-card.featured .duration-badge {
+            background: #FFD700;
+            color: #0d3b1a;
+        }
+        .promo-saving-ribbon {
+            position: absolute;
+            top: 12px;
+            right: -22px;
+            background: #ff4757;
+            color: #fff;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 4px 30px;
+            transform: rotate(35deg);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        /* Countdown */
+        .promo-countdown-wrap {
+            background: rgba(0,0,0,0.25);
+            border: 1px solid rgba(255,215,0,0.25);
+            border-radius: 18px;
+            padding: 20px 24px;
+            margin-bottom: 28px;
+            display: inline-block;
+        }
+        .promo-countdown-label {
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: #FFD700;
+            margin-bottom: 10px;
+        }
+        .countdown-timer {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .countdown-unit {
+            text-align: center;
+            min-width: 54px;
+        }
+        .countdown-number {
+            font-size: 2rem;
+            font-weight: 900;
+            line-height: 1;
+            color: #FFD700;
+            display: block;
+            font-variant-numeric: tabular-nums;
+        }
+        .countdown-unit-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            opacity: 0.7;
+            margin-top: 4px;
+            display: block;
+        }
+        .countdown-sep {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: rgba(255,215,0,0.4);
+            align-self: flex-start;
+            padding-top: 2px;
+        }
+        /* Carousel */
+        .promo-carousel-wrap {
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: 0 40px 80px rgba(0,0,0,0.5);
+            position: relative;
+            z-index: 2;
+        }
+        .promo-carousel-wrap .carousel-item img {
+            width: 100%;
+            max-height: 620px;
+            object-fit: cover;
+            object-position: center top;
+        }
+        .promo-carousel-wrap .carousel-indicators [data-bs-target] {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: rgba(255,215,0,0.6);
+        }
+        .promo-carousel-wrap .carousel-indicators .active {
+            background-color: #FFD700;
+        }
+        .promo-cta-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            align-items: center;
+        }
+        .btn-promo-primary {
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            color: #0d3b1a;
+            border: none;
+            font-weight: 800;
+            padding: 16px 36px;
+            border-radius: 50px;
+            font-size: 1rem;
+            transition: 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            letter-spacing: 0.02em;
+        }
+        .btn-promo-primary:hover {
+            color: #0d3b1a;
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(255,215,0,0.4);
+        }
+        .btn-promo-secondary {
+            background: rgba(255,255,255,0.1);
+            border: 2px solid rgba(255,255,255,0.3);
+            color: #fff;
+            font-weight: 700;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-size: 1rem;
+            transition: 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-promo-secondary:hover {
+            color: #FFD700;
+            border-color: #FFD700;
+            background: rgba(255,215,0,0.08);
+        }
+        .promo-trust-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .promo-trust-pill {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 50px;
+            padding: 5px 16px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .promo-trust-pill i { color: #FFD700; }
+
+        /* Fleet promo badge */
+        .promo-limited-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff4757, #c0392b);
+            color: #fff;
+            font-size: 0.72rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            border-radius: 50px;
+            padding: 3px 12px;
+            margin-left: 8px;
+            vertical-align: middle;
+            animation: promoPulse 2s ease-in-out infinite;
+        }
+
+        @media (max-width: 768px) {
+            .promo-pricing-wrap { gap: 12px; }
+            .promo-price-card { min-width: 140px; }
+            .promo-price-card .price { font-size: 2.2rem; }
+            .countdown-number { font-size: 1.5rem; }
+            .promo-cta-group { flex-direction: column; }
+            .btn-promo-primary, .btn-promo-secondary { width: 100%; text-align: center; }
+        }
+
     </style>
 </head>
 <body>
 
+    <!-- August Promo Announcement Bar -->
+    <div id="promo-announcement-bar" role="banner" aria-label="August promotion announcement">
+        <div class="promo-bar-inner">
+            <span>🚨</span>
+            <span class="promo-bar-badge">🔥 August 2026 Promo</span>
+            <span class="promo-bar-pill">Short Trip (&lt;7 days): <strong>$14/day</strong></span>
+            <span>•</span>
+            <span class="promo-bar-pill">Long Adventure (7+ days): <strong>$13/day</strong></span>
+            <span>•</span>
+            <a href="#august-promo" style="color:#FFD700;font-weight:700;text-decoration:none;">See the deal ↓</a>
+        </div>
+        <button class="promo-bar-dismiss" id="promoBarDismiss" aria-label="Dismiss announcement">✕</button>
+    </div>
+
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top" style="top:var(--promo-bar-height,43px);">
         <div class="container">
             <a class="navbar-brand fs-2" href="/">SK TUK<span class="text-dark">RIDES</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
@@ -621,6 +981,134 @@
                         </div>
                     </aside>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== AUGUST PROMO SECTION ===== -->
+    <section id="august-promo" class="py-5" aria-labelledby="august-promo-heading">
+        <div class="container py-5 position-relative" style="z-index:2;">
+            <div class="row g-5 align-items-center">
+
+                <!-- LEFT: Promo Content -->
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <span class="promo-section-badge">🔥 Limited Time · August 2026 Only</span>
+                    <h2 id="august-promo-heading" class="promo-title">
+                        Explore Sri Lanka<br>
+                        <span>for as low as $13/day</span>
+                    </h2>
+                    <p class="promo-subtitle">Our biggest promo of the year. Self-drive a decorated tuk tuk across Sri Lanka's beaches, tea hills, and ancient cities — at our lowest ever rate. Offer valid throughout August 2026.</p>
+
+                    <!-- Pricing Tiers -->
+                    <div class="promo-pricing-wrap">
+                        <div class="promo-price-card">
+                            <p class="tag">🏖️ Short Trip</p>
+                            <div class="price"><sup>$</sup>14</div>
+                            <p class="price-label">per day</p>
+                            <span class="duration-badge">Under 7 Days</span>
+                        </div>
+                        <div class="promo-price-card featured">
+                            <div class="promo-saving-ribbon">Best Value</div>
+                            <p class="tag">🌄 Long Adventure</p>
+                            <div class="price"><sup>$</sup>13</div>
+                            <p class="price-label">per day</p>
+                            <span class="duration-badge">7+ Days</span>
+                        </div>
+                    </div>
+
+                    <!-- Countdown Timer -->
+                    <div class="promo-countdown-wrap">
+                        <p class="promo-countdown-label mb-0">⏳ Offer Ends In</p>
+                        <div class="countdown-timer mt-2" id="promoCountdown" aria-live="polite" aria-label="Countdown to end of August promotion">
+                            <div class="countdown-unit">
+                                <span class="countdown-number" id="ctDays">28</span>
+                                <span class="countdown-unit-label">Days</span>
+                            </div>
+                            <span class="countdown-sep">:</span>
+                            <div class="countdown-unit">
+                                <span class="countdown-number" id="ctHours">00</span>
+                                <span class="countdown-unit-label">Hours</span>
+                            </div>
+                            <span class="countdown-sep">:</span>
+                            <div class="countdown-unit">
+                                <span class="countdown-number" id="ctMins">00</span>
+                                <span class="countdown-unit-label">Mins</span>
+                            </div>
+                            <span class="countdown-sep">:</span>
+                            <div class="countdown-unit">
+                                <span class="countdown-number" id="ctSecs">00</span>
+                                <span class="countdown-unit-label">Secs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTAs -->
+                    <div class="promo-cta-group">
+                        <a href="https://wa.me/94768292995?text=Hi%20SK%20Tuk%20Rides%21%20I%20saw%20the%20August%202026%20promo%20%E2%80%94%20%2414%2Fday%20short%20trip%20%2F%20%2413%2Fday%20long%20adventure.%20I%27d%20like%20to%20book%20this%20offer." class="btn-promo-primary" target="_blank" rel="noopener noreferrer" id="promoWhatsappCta">
+                            💬 Claim This Deal on WhatsApp
+                        </a>
+                        <a href="https://www.sktukrides.com/" class="btn-promo-secondary" target="_blank" rel="noopener noreferrer">
+                            Book on Main Site
+                        </a>
+                    </div>
+
+                    <!-- Trust pills -->
+                    <div class="promo-trust-pills">
+                        <span class="promo-trust-pill"><i class="bi bi-shield-check"></i> No hidden fees</span>
+                        <span class="promo-trust-pill"><i class="bi bi-person-check"></i> Lesson included</span>
+                        <span class="promo-trust-pill"><i class="bi bi-card-text"></i> AAC permit support</span>
+                        <span class="promo-trust-pill"><i class="bi bi-telephone-fill"></i> 24/7 WhatsApp support</span>
+                    </div>
+                </div>
+
+                <!-- RIGHT: Poster Carousel -->
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <div class="promo-carousel-wrap">
+                        <div id="promoPosterCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500" aria-label="August promotion poster carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#promoPosterCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Poster 1"></button>
+                                <button type="button" data-bs-target="#promoPosterCarousel" data-bs-slide-to="1" aria-label="Poster 2"></button>
+                                <button type="button" data-bs-target="#promoPosterCarousel" data-bs-slide-to="2" aria-label="Poster 3"></button>
+                                <button type="button" data-bs-target="#promoPosterCarousel" data-bs-slide-to="3" aria-label="Poster 4"></button>
+                                <button type="button" data-bs-target="#promoPosterCarousel" data-bs-slide-to="4" aria-label="Poster 5"></button>
+                                <button type="button" data-bs-target="#promoPosterCarousel" data-bs-slide-to="5" aria-label="Poster 6"></button>
+                                <button type="button" data-bs-target="#promoPosterCarousel" data-bs-slide-to="6" aria-label="Poster 7"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/assets/images/promo-poster-1.jpg" alt="August 2026 Tuk Tuk Rental Promo Sri Lanka — Short Trip $14/day, Long Adventure $13/day" width="826" height="1466" loading="eager">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/images/promo-poster-2.jpg" alt="SK Tuk Rides August Promotion — Coastal road tuk tuk adventure Sri Lanka" width="826" height="1466" loading="lazy">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/images/promo-poster-3.jpg" alt="SK Tuk Rides August Deal — Tea estate tuk tuk self-drive Sri Lanka" width="826" height="1466" loading="lazy">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/images/promo-poster-4.jpg" alt="SK Tuk Rides August Offer — Beach coastal road tuk tuk Sri Lanka $14/day" width="826" height="1466" loading="lazy">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/images/promo-poster-5.jpg" alt="August Promo tuk tuk Sri Lanka panoramic tea estate route" width="826" height="1466" loading="lazy">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/images/promo-poster-6.jpg" alt="SK Tuk Rides August 2026 Promotion — Blue tuk tuk beach road Sri Lanka" width="826" height="1466" loading="lazy">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/images/promo-poster-7.jpg" alt="August limited deal — Tuk tuk rental Sri Lanka $13/day for 7+ days" width="826" height="1466" loading="lazy">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#promoPosterCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#promoPosterCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -847,7 +1335,10 @@
                                     <h3 class="fw-bold mb-1">The Explorer</h3>
                                     <p class="text-muted mb-0">Classic self-drive tuk tuk for the full Sri Lanka road-trip feel.</p>
                                 </div>
-                                <span class="price-tag">$16/day</span>
+                                <div class="text-end">
+                                    <span class="price-tag">$16/day</span><br>
+                                    <span class="promo-limited-badge mt-1">Aug Promo from $14</span>
+                                </div>
                             </div>
                             <ul class="list-unstyled mb-4 mt-auto">
                                 <li><i class="bi bi-check2-circle text-success me-2"></i> Manual tuk tuk setup</li>
@@ -866,7 +1357,10 @@
                                     <h3 class="fw-bold mb-1">The Pro</h3>
                                     <p class="text-muted mb-0">Extra comfort for longer island routes and travelers carrying more gear.</p>
                                 </div>
-                                <span class="price-tag">$18/day</span>
+                                <div class="text-end">
+                                    <span class="price-tag">$18/day</span><br>
+                                    <span class="promo-limited-badge mt-1">Aug Promo from $13</span>
+                                </div>
                             </div>
                             <ul class="list-unstyled mb-4 mt-auto">
                                 <li><i class="bi bi-check2-circle text-success me-2"></i> Comfort-focused setup</li>
@@ -1152,6 +1646,79 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- August Promo: Countdown Timer + Announcement Bar dismiss -->
+    <script>
+        // ── Announcement bar height compensation for fixed navbar ──
+        (function () {
+            var bar = document.getElementById('promo-announcement-bar');
+            var dismissBtn = document.getElementById('promoBarDismiss');
+            function setBarHeight() {
+                if (bar && bar.style.display !== 'none') {
+                    document.documentElement.style.setProperty('--promo-bar-height', bar.offsetHeight + 'px');
+                } else {
+                    document.documentElement.style.setProperty('--promo-bar-height', '0px');
+                }
+            }
+            setBarHeight();
+            window.addEventListener('resize', setBarHeight);
+            if (dismissBtn && bar) {
+                dismissBtn.addEventListener('click', function () {
+                    bar.style.display = 'none';
+                    setBarHeight();
+                    try { sessionStorage.setItem('promoBarDismissed', '1'); } catch(e){}
+                });
+                // Respect session dismissal
+                try {
+                    if (sessionStorage.getItem('promoBarDismissed') === '1') {
+                        bar.style.display = 'none';
+                        setBarHeight();
+                    }
+                } catch(e){}
+            }
+        })();
+
+        // ── Pure JS Countdown Timer (static-page friendly) ──
+        (function () {
+            // End of August 31, 2026 at 23:59:59 UTC
+            var endDate = new Date('2026-08-31T23:59:59Z');
+            var elDays  = document.getElementById('ctDays');
+            var elHours = document.getElementById('ctHours');
+            var elMins  = document.getElementById('ctMins');
+            var elSecs  = document.getElementById('ctSecs');
+
+            function pad(n) { return n < 10 ? '0' + n : String(n); }
+
+            function updateCountdown() {
+                var now  = new Date();
+                var diff = endDate - now;
+                if (diff <= 0) {
+                    // Promo expired
+                    if (elDays)  elDays.textContent  = '00';
+                    if (elHours) elHours.textContent = '00';
+                    if (elMins)  elMins.textContent  = '00';
+                    if (elSecs)  elSecs.textContent  = '00';
+                    var wrap = document.querySelector('.promo-countdown-wrap');
+                    if (wrap) wrap.innerHTML = '<p style="color:#FFD700;font-weight:700;margin:0;">This promotion has ended. Contact us for current rates.</p>';
+                    return;
+                }
+                var totalSeconds = Math.floor(diff / 1000);
+                var days  = Math.floor(totalSeconds / 86400);
+                var hours = Math.floor((totalSeconds % 86400) / 3600);
+                var mins  = Math.floor((totalSeconds % 3600) / 60);
+                var secs  = totalSeconds % 60;
+                if (elDays)  elDays.textContent  = pad(days);
+                if (elHours) elHours.textContent = pad(hours);
+                if (elMins)  elMins.textContent  = pad(mins);
+                if (elSecs)  elSecs.textContent  = pad(secs);
+            }
+
+            if (elDays || elHours || elMins || elSecs) {
+                updateCountdown();
+                setInterval(updateCountdown, 1000);
+            }
+        })();
+    </script>
     <script>
         const leadInquiryForm = document.getElementById('leadInquiryForm');
         if (leadInquiryForm) {
